@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/catFrag"
+        android:name="com.example.fragments_backup.FragmentOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        tools:layout="@layout/fragment_one" />
+
+    <fragment
+        android:id="@+id/dogFrag"
+        android:name="com.example.fragments_backup.FragmentOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        tools:layout="@layout/fragment_one" />
+
+    <Button
+        android:id="@+id/catBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cat frag"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="465dp" />
+
+    <Button
+        android:id="@+id/dogBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dog frag"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="465dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
